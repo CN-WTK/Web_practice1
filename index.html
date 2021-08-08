@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局</title>
+    <style>
+        p{
+            margin: 0px;
+            font-size: 14px;
+            color: #606266;
+        }
+
+        .box_out{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 800px;
+            background: #fff;
+        }
+
+        .nav{
+            display: flex;
+            flex-direction: column;
+            width: 16%;
+            height: 1000px;
+            background: #fff;
+        }
+
+        .user_basic{
+            display: flex;
+            align-items: flex-end;
+            background: #000;
+            height: 170px;
+            width: 100%;
+        }
+
+        .user_profile{
+            margin: 20px;
+        }
+
+        .user_profile img{
+            border: 3px solid #fff;
+        }
+
+        .user_profile span{
+            color: #fff;
+            font-weight: 700;
+            padding-left: 30px;
+            vertical-align: bottom;
+            display: inline-block;
+            border-bottom: 3px solid #fff;
+        }
+
+        .u_menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 500px;
+            width: 100%;
+        }
+
+        .menu_list{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px;
+            width: 100%;
+        }
+
+        .box_in{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 83%;
+            height: 1000px;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            background: #fff;
+        }
+
+        .title{
+            display: flex;
+            align-items: center;
+            margin: 0 24px;
+        }
+
+        .user{
+            display: flex;
+            align-items: center;
+            margin: 0 24px;
+        }
+
+        .list{
+            height: 910px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body bgcolor="#f0f2f5">
+    <div class="box_out">
+        <div class="nav">
+            <div class="sidebar">
+                <div class="user_basic">
+                    <a class="user_profile" href="">
+                        <img src="http://www.thiswaifudoesnotexist.net/example-7934.jpg" alt="鱼酱" height="50">
+                        <span>鱼酱.管理员</span>
+                    </a>
+                </div>
+                <div class="u_menu">
+                    <div class="menu_list">
+                        <ul><p>仪表板</p></ul>
+                        <ul><p>个人中心</p></ul>
+                        <ul><p>用户管理</p></ul>
+                        <ul><p>文章管理</p></ul>
+                        <ul><p>评论管理</p></ul>
+                        <ul><p>实例页面</p></ul>
+                        <ul><p>小玩意</p></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box_in">
+            <div class="header">
+                <div class="title">
+                    <p>仪表板</p>
+                </div>
+                <div class="user">
+                    <p>鱼酱</p>
+                </div>
+            </div>
+            <div class="list">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
